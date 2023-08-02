@@ -1,0 +1,108 @@
+/*Global styles - applying these to all elements*/
+* {
+  box-sizing: border-box; /*Ensures padding does not affect final computed width*/
+  margin: 0; /*Removes default margin*/
+  padding: 0; /*Removes default padding*/
+}
+
+/*Body styles - setting fonts, colours, and line height for the body*/
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/*Container styles - used for the main content area*/
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+/*Header styles - for both main and secondary headers*/
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #444;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/*Form styles - to layout form fields*/
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.module {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/*Label styles - for form field labels*/
+label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+/*Input field styles - for form input fields*/
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/*Button styles - for all form buttons*/
+button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+/*Button hover styles - for when cursor is over button*/
+button:hover {
+  background-color: #0056b3;
+}
+
+/*Results area styles - for displaying output*/
+#results {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+/*Error message styles - for displaying error messages*/
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+/*Responsive styles for screens smaller than 800px*/
+@media screen and (max-width: 800px) {
+  .container {
+      margin: 1rem;
+      padding: 1rem;
+  }
+}
